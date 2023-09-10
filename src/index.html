@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="dropShadow"></div>
+      <main class="main flex gap-10 mx-auto px-5 min-h-100">
+        <aside class="w-perc-50 py-6 flex flex-column h-100 jc-sb sticky t-0">
+          <section class="flex ai-c gap-3">
+            <img class="userImage" alt="User" />
+            <div>
+              <h1 class="fs-48 fw-700 mb-1 text-slate-heading">Rajat Gupta</h1>
+              <h2 class="fs-20 fw-500 mb-1 text-slate-heading">
+                Systems Engineer at TCS
+              </h2>
+              <p>
+                I build accessible, inclusive products and digital experiences
+                for the web.
+              </p>
+            </div>
+          </section>
+          <nav class="nav flex flex-column gap-2">
+            <a
+              class="navItem navItem-about flex ai-c gap-1 text-slate-anchor fw-700 max-w-15"
+              href="#about"
+            >
+              <span class="dash w-3"></span>ABOUT
+            </a>
+            <a
+              class="navItem navItem-experience flex ai-c gap-1 text-slate-anchor fw-700 max-w-15"
+              href="#experience"
+            >
+              <span class="dash w-3"></span>EXPERIENCE
+            </a>
+            <!-- <a
+              class="navItem navItem-project flex ai-c gap-1 text-slate-anchor fw-700 max-w-15"
+              href="#project"
+            >
+              <span class="dash w-3"></span>PROJECTS
+            </a> -->
+          </nav>
+          <section class="flex gap-3">
+            <a
+              href="https://github.com/Rajat0916"
+              target="_blank"
+              rel="noreferrer"
+              class="contactInfo"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="../assets/icons/github.svg#contactIcon"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rajatgupta0916"
+              target="_blank"
+              rel="noreferrer"
+              class="contactInfo"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use
+                  xlink:href="../assets/icons/linkedin.svg#contactIcon"
+                ></use>
+              </svg>
+            </a>
+            <a
+              href="mailto:rajatgupta0916@gmail.com?subject=Mail from rajat0916.com"
+              target="_blank"
+              rel="noreferrer"
+              class="contactInfo"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="../assets/icons/mail.svg#contactIcon"></use>
+              </svg>
+            </a>
+            <a
+              href="tel:+919999087518"
+              target="_blank"
+              rel="noreferrer"
+              class="contactInfo"
+            >
+              <svg>
+                <use xlink:href="../assets/icons/phone.svg#contactIcon"></use>
+              </svg>
+            </a>
+          </section>
+        </aside>
+        <section class="w-perc-50 py-6">
+          <object
+            class="welcomeImage"
+            data="../assets/img/welcome.svg#welcome_svg"
+            type="image/svg+xml"
+          ></object>
+          <div id="about" class="mb-10">
+            <p class="mb-2">
+              My name is Rajat Gupta, I'm a front-end developer based in Pune,
+              Maharashtra, India. Back in 2018, I decided to try my hand at
+              coding and web development. Fast-forward to today, and I’ve had
+              the privilege of building software for an well know clients
+              majorly from BFSI and HealthCare sector.
+            </p>
+            <p class="mb-2">
+              My main focus these days is building products and leading projects
+              for our clients at TCS. In my free time, I've also founded a child
+              welfare NGO where we work for the upliftment of underprivileged
+              children and women
+            </p>
+            <p>
+              When I’m not at the computer, I’m usually trekking, hanging out
+              with my family, watching sports or surfing documentaries.
+            </p>
+          </div>
+          <ul id="experience" class="mb-10">
+            <li class="mb-5 flex gap-3 ai-fs experienceItem">
+              <div class="resumeShadow"></div>
+              <p class="flex flex-wrap w-perc-30 gap-1 ai-c fs-14 mt-05">
+                July 2021<span class="dash w-15"></span>PRESENT
+              </p>
+              <aside class="w-perc-60">
+                <h1 class="mb-1 text-slate-heading fs-16">
+                  Systems Engineer - TCS
+                </h1>
+                <h2 class="mb-05 fs-14">Frontend Developer</h2>
+                <p class="mb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto voluptas reprehenderit adipisci incidunt, nesciunt
+                  ipsa, quos soluta itaque assumenda dolorum saepe impedit quis
+                  facere eligendi aut molestiae necessitatibus laudantium
+                  porro!s
+                </p>
+                <ul class="flex flex-wrap ai-c gap-1 skill-item">
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Angular</li>
+                  <li>TypeScript</li>
+                  <li>JavaScript</li>
+                  <li>SCSS</li>
+                  <li>Webpack</li>
+                  <li>Single SPA</li>
+                </ul>
+              </aside>
+            </li>
+            <li class="mb-5 flex gap-3 ai-fs experienceItem">
+              <div class="resumeShadow"></div>
+              <p class="flex flex-wrap w-perc-30 gap-1 ai-c fs-14 mt-05">
+                May 2018<span class="dash w-15"></span>June 2021
+              </p>
+              <aside class="w-perc-60">
+                <h1 class="mb-1 text-slate-heading fs-16">
+                  Project Engineer - Wipro Technologies
+                </h1>
+                <h2 class="mb-05 fs-14">React Developer</h2>
+                <p class="mb-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto voluptas reprehenderit adipisci incidunt, nesciunt
+                  ipsa, quos soluta itaque assumenda dolorum saepe impedit quis
+                  facere eligendi aut molestiae necessitatibus laudantium
+                  porro!s
+                </p>
+                <ul class="flex flex-wrap ai-c gap-1 skill-item">
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>JavaScript</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Webpack</li>
+                </ul>
+              </aside>
+            </li>
+            <a
+              href="../assets/document/resume.pdf"
+              target="_blank"
+              rel="author"
+              class="resumeLink inline-flex ai-c py-1 text-slate-heading"
+            >
+              View Full Résumé
+              <svg>
+                <use xlink:href="../assets/icons/arrow.svg#arrow"></use>
+              </svg>
+            </a>
+          </ul>
+          <!-- <div id="project" class="mb-10"></div> -->
+          <footer id="footer">
+            <p>
+              Loosely designed in
+              <a
+                href="https://www.figma.com/"
+                class="footerLink"
+                target="_blank"
+                rel="noreferrer"
+                >Figma</a
+              >
+              and coded in
+              <a
+                href="https://www.figma.com/"
+                class="footerLink"
+                target="_blank"
+                rel="noreferrer"
+                >Visual Studio Code</a
+              >
+              by yours truly. Built with
+              <a
+                href="https://www.figma.com/"
+                class="footerLink"
+                target="_blank"
+                rel="noreferrer"
+                >Vanilla JS</a
+              >
+              and
+              <a
+                href="https://www.figma.com/"
+                class="footerLink"
+                target="_blank"
+                rel="noreferrer"
+                >SCSS</a
+              >, build with
+              <a
+                href="https://www.figma.com/"
+                class="footerLink"
+                target="_blank"
+                rel="noreferrer"
+                >Parcel</a
+              >
+              and deployed with
+              <a
+                href="https://www.figma.com/"
+                class="footerLink"
+                target="_blank"
+                rel="noreferrer"
+                >Vercel</a
+              >. All text is set in the Inter typeface.
+            </p>
+          </footer>
+        </section>
+      </main>
+    </div>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
