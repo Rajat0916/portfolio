@@ -4,6 +4,7 @@
   --font-color-heading: rgb(226 232 240);
   --background-color: rgb(15 23 42);
   --tertiary-color: rgb(94 234 212);
+  --footer-color: rgb(100 116 139)
 }
 
 * {
@@ -224,8 +225,8 @@ body {
   position: relative;
 }
 
-.main {
-  width: min(90%, 130rem);
+.container {
+  max-width: 130rem;
 }
 
 @media (min-width: 1590px) {
@@ -234,9 +235,11 @@ body {
   }
 }
 
-@media (max-width: 1320px) {
-  html {
-    font-size: 8px;
+@media (max-width: 1190px) {
+  .container {
+    max-width: 110rem;
+    padding: 0 3rem;
+    gap: 5rem
   }
 }
 
@@ -349,4 +352,35 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 100rem;
   background-color: rgba(45,212,191,.1);
+}
+
+.footer { 
+  color: var(--footer-color);
+  font-size: 1.4rem;
+}
+
+.footer a:link, .footer a:visited {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 500;
+}
+
+.footer a:hover, .footer a:active {
+  color: var(--tertiary-color)
+}
+
+ul li {
+  list-style: none;
+}
+
+.giffy {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  padding: 2.5rem 5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.giffy:hover {
+  transform: translateY(-1rem) scale(1.2);
 }
