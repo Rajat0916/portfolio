@@ -1,0 +1,29 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == wide-screen {
+    @media (min-width: 1590px) {
+      @content;
+    }
+  }
+  @if $breakpoint == small-laptop {
+    @media (max-width: 1190px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 1100px) {
+      @content;
+    }
+  }
+}
+
+@mixin fs($font-size: 1.6rem) {
+  font-size: $font-size;
+}
+
+@mixin fw($font-weight: 400) {
+  font-weight: $font-weight;
+}
+
+@mixin p($position: relative) {
+  position: $position;
+}

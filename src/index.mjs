@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./main.scss";
 import user from "../assets/img/users.jpg";
 
 const about = document.getElementById("about");
@@ -6,11 +6,11 @@ const app = document.querySelector(".app");
 const dropShadow = document.querySelector(".dropShadow");
 const experience = document.getElementById("experience");
 const footer = document.getElementById("footer");
-const nav = document.querySelector(".nav");
+const nav = document.querySelector(".header-nav");
 const navItem = document.querySelectorAll(".navItem");
 // const project = document.getElementById('project');
 const welcomeImage = document.querySelector(".welcomeImage");
-const userImage = document.querySelector(".userImage");
+const userImage = document.querySelector(".header-profile--userImage");
 
 const totalFrames = 600;
 let length, path;
@@ -29,7 +29,7 @@ let handle = 0;
   });
 })();
 
-//maniputaling active class of nav items on click amd implementing smooth scrolling
+//maniputaling active class of nav items on click and implementing smooth scrolling
 (() => {
   nav.addEventListener("click", (e) => {
     e.preventDefault();
@@ -96,6 +96,7 @@ const callback = (entries) => {
     const { target, isIntersecting } = entry;
     const element = document.querySelector(`.navItem-${target.id}`);
     if (isIntersecting) {
+      console.log('inside isintersecting', navItem, element)
       navItem.forEach((el) => el.classList.remove("active"));
       element?.classList.add("active");
     }
